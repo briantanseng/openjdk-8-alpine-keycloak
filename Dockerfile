@@ -4,7 +4,7 @@ RUN apk update && \
     apk --no-cache add wget bash \
  && rm -rf /var/cache/apk/*
 
-ENV KEYCLOAK_VERSION 4.3.0.Final
+ENV KEYCLOAK_VERSION 4.4.0.Final
 ENV MSSQL_JDBC_VERSION 7.0.0.jre8
 
 RUN wget -nv https://downloads.jboss.org/keycloak/$KEYCLOAK_VERSION/keycloak-$KEYCLOAK_VERSION.tar.gz && \
